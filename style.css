@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: block;
+  background-color: black;
+  text-align: center;
+  font-size: 200%;
+}
+h1,
+p {
+  background-color: gray;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  outline: none;
+  background-color: blue;
+  color: yellow;
+}
+
+p:hover {
+    color: tomato;
+}
