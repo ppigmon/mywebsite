@@ -1,5 +1,6 @@
 /* blue accent #0dd3ff */
 
+/* Globals */
 
 * {
   margin: 0;
@@ -9,8 +10,8 @@
 
 body {
   background: rgb(243, 243, 243);
-  
-  font-family: 'Ubuntu', Aeriel;
+  overflow-x: hidden;
+  font-family: "Ubuntu", Aeriel;
 }
 
 a {
@@ -21,13 +22,29 @@ a {
 section {
   background-color: #fff;
   height: 100vh;
-  width: 2000px;
+  max-width: 2000px;
   margin: 0 auto;
   overflow: hidden;
+  z-index: -10;
 }
 
+.btn {
+  width: 200px;
+  height: 70px;
+  border: 0;
+  border-radius: 20px;
+  background: #0dd3ff;
+  color: #fff;
+  font-family: inherit;
+  font-size: 30px;
+  margin: 0 60px;
+  box-shadow: 1px 1px 3px #333;
+}
 
-
+.btn:hover {
+  transform: scale(1.2);
+  transition: transform 300ms ease-out;
+}
 
 /* header and nav bar order should be parent to child and left to right */
 
@@ -37,7 +54,6 @@ header {
   display: flex;
   flex-direction: row;
   position: relative;
-
 }
 
 .logo {
@@ -45,15 +61,15 @@ header {
   margin-left: 10px;
   padding: 2px;
   font-weight: 500;
-  font-size: 20px;
-
+  font-size: 35px;
+  z-index: 1;
 }
 
 .logo::after {
-  content: 'Philip Pigmon';
+  content: "Philip Pigmon";
   color: #0dd3ff;
   position: absolute;
-  left: 18px;
+  left: 8px;
   z-index: -1;
 }
 
@@ -65,25 +81,22 @@ header {
 
 .nav ul {
   display: flex;
-  margin-right: 25px;
+  margin: 7px 35px 0 0;
 }
 
 .nav ul li {
-  font-size: 12px;
+  font-size: 20px;
   margin: 5px;
   padding: 5px;
   list-style: none;
   cursor: pointer;
 }
 
-.nav ul li:before {
-}
-
 .nav ul li:after {
-  display:block;
-  content: '';
-  border-bottom: solid 3px #0dd3ff; 
-  transform: scaleX(0); 
+  display: block;
+  content: "";
+  border-bottom: solid 3px #0dd3ff;
+  transform: scaleX(0);
   transition: transform 500ms ease-in-out;
 }
 
@@ -97,34 +110,34 @@ header {
 }
 
 .nav ul li:hover:after {
-  transform: scaleX(1.2);
+  transform: scaleX(1);
 }
-
-
 
 /* -----DARK/LIGHT MODE SECTION-----*/
 
 .dark-light-mode-container {
   display: flex;
-  margin: 8px 10px 5px 0;
+  margin: 15px 10px 5px 0;
   padding-top: 1px;
-  font-size: 13px;
-
+  font-size: 20px;
 }
-
 
 /* -----SOCIAL LINKS-----*/
 
 .social-links {
-  margin: 2px 35px 5px 5px;
+  margin: 10px 35px 5px 5px;
   padding: 5px;
 }
 
 .social-links a {
   margin-left: 10px;
-  font-size: 13px;
+  font-size: 30px;
   cursor: pointer;
+}
 
+.social-links a:hover {
+  color: #0dd3ff;
+  transition: color 500ms;
 }
 
 /* ------------body of main page------ */
@@ -132,32 +145,29 @@ header {
 /* -----MAIN-----*/
 
 .main {
-  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
-
-
 .profile-image {
-  position: absolute;
-  top: 150px;
-  left: 100px;
-  width: 150;
-  height: 300px;
+  width: 300;
+  height: 600px;
 }
 
 .main-content {
-  position: absolute;
-  top: 200px;
-  left: 450px;
-  width: 450px;
+  width: 900px;
   height: auto;
+  font-size: 200%;
   padding: 25px;
-  margin: 10px 20px 10px 0;
+  margin: 10px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
-
 }
 
 .main-content span {
@@ -165,7 +175,8 @@ header {
   color: #fff;
 }
 
-.main-content h1, .main-content p {
+.main-content h1,
+.main-content p {
   margin: 5px;
 }
 
@@ -173,33 +184,54 @@ header {
   padding-bottom: 15px;
 }
 
-
 /* buttons on main page */
 
 .btns-container {
   display: flex;
   justify-content: center;
-
 }
 
-.btn {
-  width: 100px;
-  height: 35px;
-  border: 0;
-  border-radius: 20px;
-  background: #0dd3ff;
-  color: #fff;
-  font-family: inherit;
-  font-size: 16px;
-  margin: 0 20px;
-  box-shadow: 1px 1px 3px #333;
+/* -----ABOUT SECTION-----*/
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about-header {
+  margin: 50px auto;
+  font-size: 3rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  width: 50%;
 }
 
 /* -----WORK SECTION-----*/
 
 .work {
   display: flex;
+  flex-direction: column;
+}
+
+.work-header {
+  margin: 50px auto;
+  font-size: 3rem;
+}
+
+.work p {
+  margin: 0 auto;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.work-cards-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-content: center;
   align-items: center;
 }
 
@@ -215,17 +247,15 @@ header {
   justify-content: center;
 }
 
-.work-cards h3, .work-cards p {
-  padding-bottom:;
+.work-cards h3,
+.work-cards p {
+  padding-bottom: ;
 }
 
 .work-cards img {
   width: 200px;
   height: 200px;
 }
-
-/* -----Skills SECTION-----*/
-
 
 /* -----Contact SECTION-----*/
 
@@ -237,17 +267,15 @@ header {
 }
 
 .form-container {
-
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   width: 300px;
-
 }
 
-#name-input {
+/* #name-input {
   outline: 0;
   border: 0;
-}
+} */

@@ -1,97 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8" />
-        <title>Philip Pigmon</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Philip Pigmon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
 
+    <!----------------------- HOMEPAGE SECTION -->
+    <section class="home">
+      <header>
+        <span class="logo">Philip Pigmon</span>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">&ltHome&gt</a></li>
+            <li><a href="#">&ltWork&gt</a></li>
+            <li><a href="#">&ltResume&gt</a></li>
+            <li><a href="#">&ltContact&gt</a></li>
+          </ul>
+        </nav>
+        <div class="dark-light-mode-container">
+          <div class="dark-icon"><i class="fas fa-moon">/</i></div>
+          <div class="light-icon"><i class="far fa-sun"></i></div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="github"><i class="fab fa-github"></i></a>
+          <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </header>
+      <div class="main">
+        <div class="profile-image-container">
+          <img
+            src="imgs\profilepic.JPG"
+            class="profile-image"
+            alt="profile image"
+          />
+        </div>
+        <div class="main-content">
+          <h1>
+            Hello, I'm <span>Philip Pigmon</span> and i'm a Jr. Full stack
+            developer.
+          </h1>
+          <p>
+            I specialize in web and software using the MERN stack with knowledge
+            and experience in dev-ops
+          </p>
+          <div class="btns-container">
+            <button class="btn contact-btn">
+              Contact <i class="far fa-comment"></i>
+            </button>
+            <button class="btn resume-btn">
+              Resume <i class="fas fa-file-pdf"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!----------------------- ABOUT SECTION -->
 
-        <section class="home">
-                <header>
-                        <span class="logo">Philip Pigmon</span>
-                        <nav class="nav">
-                                <ul>
-                                        <li><a href="#">&ltHome&gt</a></li>
-                                        <li><a href="#">&ltWork&gt</a></li>
-                                        <li><a href="#">&ltResume&gt</a></li>
-                                        <li><a href="#">&ltContact&gt</a></li>
-                                </ul>
-                        </nav>
-                        <div class="dark-light-mode-container">
-                                <div class="dark-icon"><i class="fas fa-moon">/</i></div>
-                                <div class="light-icon"><i class="far fa-sun"></i></div>
-                        </div>
-                        <div class="social-links">
-                                <a href="#" class="github"><i class="fab fa-github"></i></a>
-                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                </header>
-                <div class="main">
-                        <img src="unsplash.jpg" class="profile-image" alt="profile image"/>
-                        <div class="main-content">
-                                <h1>Hello, I'm <span>Philip Pigmon</span> and i'm a Jr. Full stack developer.</h1>
-                                <p>I specialize in web and software using the MERN stack with knowledge and experience in dev-ops</p>
-                                <div class="btns-container">
-                                        <button class="btn contact-btn">Contact</button>
-                                        <button class="btn resume-btn">Resume</button>
-                                </div>
-                        </div>
-                </div>
-        </section>
+    <section class="about">
+      <h3 class="about-header">About me!</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni sed, exercitationem, voluptatem expedita ipsam mollitia incidunt minus beatae eum ex nesciunt necessitatibus consectetur at tenetur provident, id quos quae nobis.</p>
+    </section>
 
-        <section class="about-skills">
-                <h2>About</h2>
-                <p></p>
+    <!----------------------- WORK SECTION -->
 
+    <section class="work">
+      <h3 class="work-header">Work and Projects!</h3>
+      <p class="work-desc">Here I've linked some work I've done for clients as well as some projects I've completed along with a brief description and the languages that were used.  </p>
+      <div class="work-cards-container">
+        <div class="work-cards card1">
+          <h3>Project Title 1</h3>
+          <p>Project Description</p>
 
+          <!-- using imgs for source. need to learn how to emb pages into another and show a thumbnail photo as well as set up a carousel ?-->
+          <img src="https://picsum.photos/200" alt="Project Thumbnail" />
+        </div>
+        <div class="work-cards card2">
+          <h3>Project Title 2</h3>
+          <p>Project Description</p>
+          <img src="https://picsum.photos/200" alt="Project Thumbnail" />
+        </div>
+        <div class="work-cards card3">
+          <h3>Project Title 3</h3>
+          <p>Project Description</p>
+          <img src="https://picsum.photos/200" alt="Project Thumbnail" />
+        </div>
+        <div class="work-cards card1">
+          <h3>Project Title 1</h3>
+          <p>Project Description</p>
+          <img src="https://picsum.photos/200" alt="Project Thumbnail" />
+        </div>
+        <div class="work-cards card2">
+          <h3>Project Title 2</h3>
+          <p>Project Description</p>
+          <img src="https://picsum.photos/200" alt="Project Thumbnail" />
+        </div>
+        <div class="work-cards card3">
+          <h3>Project Title 3</h3>
+          <p>Project Description</p>
+          <img src="https://picsum.photos/200" alt="Project Thumbnail" />
+        </div>
+      </div>
+    </section>
+<!----------------------- CONTACT SECTION -->
+    <section class="contact">
+      <h3 class="contact-header">Send me a message!!</h3>
+      <div class="form-container">
+        <form action="" class="contact-form">
+          <input type="text" name="name" id="name-input" />
+          <span class="name-label">Name</span>
 
-        </section>
+          <input type="email" name="email" id="email-input" />
+          <span class="email-label">Email</span>
 
+          <textarea name="" id="textarea-input" cols="30" rows="10"></textarea>
+          <span class="textarea-label">Message:</span>
 
-        <section class="work">
-                <div class="work-cards card1">
-                        <h3>Project Title 1</h3>
-                        <p>Project Description</p>
-                        <img src="" alt="Project Thumbnail" />
-                </div>
-                <div class="work-cards card2">
-                        <h3>Project Title 2</h3>
-                        <p>Project Description</p>
-                        <img src="" alt="Project Thumbnail" />
-                </div>
-                <div class="work-cards card3">
-                        <h3>Project Title 3</h3>
-                        <p>Project Description</p>
-                        <img src="" alt="Project Thumbnail" />
-                </div>
-        </section>
-
-
-
-
-        <section class="contact">
-                <div class="form-container">
-                        <form action="" class="contact-form">
-
-                                <input type="text" name=""="name" id="name-input"/>
-                                <span class="name-label">Name</span>
-
-                                <input type="text" name="email" id="email-input"/>
-                                <span class="email-label">Email</span>
-
-                                <textarea name="" id="textarea-input" cols="30" rows="10"></textarea>
-                                <span class="textarea-label">Message:</span>
-
-                                <button class="btn">Submit</button>
-                        </form>
-                </div>
-        </section>
-</body>
+          <button class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
