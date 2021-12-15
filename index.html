@@ -16,27 +16,39 @@
     />
   </head>
   <body>
-
     <!----------------------- HOMEPAGE SECTION -->
     <section class="home">
       <header>
         <span class="logo">Philip Pigmon</span>
         <nav class="nav">
           <ul>
-            <li><a href="#">&ltHome&gt</a></li>
-            <li><a href="#">&ltWork&gt</a></li>
-            <li><a href="#">&ltResume&gt</a></li>
-            <li><a href="#">&ltContact&gt</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <div class="dark-light-mode-container">
-          <div class="dark-icon"><i class="fas fa-moon">/</i></div>
-          <div class="light-icon"><i class="far fa-sun"></i></div>
-        </div>
+        <!-- ----------------dark/light mode switch -->
+
+        
         <div class="social-links">
-          <a href="#" class="github"><i class="fab fa-github"></i></a>
-          <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-        </div>
+          <a href="https://github.com/ppigmon" class="github"
+          ><i class="fab fa-github"></i
+            ></a>
+            <a
+            href="https://www.linkedin.com/in/philip-pigmon-587474197/"
+            class="linkedin"
+            ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            
+            <div class="theme-switch-container">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="slider round"></div>
+              </label>
+            </div>
+        <!-- <img src="imgs\moon.png" id="icon" /> -->
       </header>
       <div class="main">
         <div class="profile-image-container">
@@ -52,8 +64,8 @@
             developer.
           </h1>
           <p>
-            I specialize in web and software using the MERN stack with knowledge
-            and experience in dev-ops
+            I specialize in creating web and software applications using the
+            MERN stack with knowledge and experience in DevOps.
           </p>
           <div class="btns-container">
             <button class="btn contact-btn">
@@ -70,15 +82,47 @@
     <!----------------------- ABOUT SECTION -->
 
     <section class="about">
-      <h3 class="about-header">About me!</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni sed, exercitationem, voluptatem expedita ipsam mollitia incidunt minus beatae eum ex nesciunt necessitatibus consectetur at tenetur provident, id quos quae nobis.</p>
+      <div class="about-container-left">
+        <h3 class="about-header">About me!</h3>
+        <p>
+          I'm a new up and coming web and software developer in the Memphis TN
+          area. After many years working in retail and sales, I decided to teach
+          myself programming and pursue a new career path in software and web
+          development. I chose this new path into the development world because
+          of my general curiosity on learning new things and how things work.
+          Pair that with my passion for creativity and inovation and you're left
+          with Me. A guy working everyday to build his skills to not just prove
+          he's capable of working for you, but that he's competent and can a
+          great asset to your organization and/or team. My long term goal is to
+          develop applications utilizing the MERN stack with a solid knowledge
+          and understanding of DevOps. So please take a moment to check out my
+          works section and if you think I'd be a good fit for you and your
+          team. Or if you have any friendly feedback or critisim please send me
+          a message with the contact form at the bottom of the page or message
+          me directly. And if you've read this far, I appreciate you for taking
+          the time to do so. :)
+        </p>
+      </div>
+      <div class="about-container-right">
+        <div class="about-img-container">
+          <div class="about-img"></div>
+        </div>
+
+        <div class="email-link">
+          <a href="mailto:">PhilipPigmon@gmail.com</a>
+        </div>
+      </div>
     </section>
 
     <!----------------------- WORK SECTION -->
 
     <section class="work">
       <h3 class="work-header">Work and Projects!</h3>
-      <p class="work-desc">Here I've linked some work I've done for clients as well as some projects I've completed along with a brief description and the languages that were used.  </p>
+      <p class="work-desc">
+        Here I've linked some work I've done for clients as well as some
+        projects I've completed to challenge myself along with a brief
+        description and the languages that were used.
+      </p>
       <div class="work-cards-container">
         <div class="work-cards card1">
           <h3>Project Title 1</h3>
@@ -114,23 +158,54 @@
         </div>
       </div>
     </section>
-<!----------------------- CONTACT SECTION -->
+    <!----------------------- CONTACT SECTION -->
     <section class="contact">
       <h3 class="contact-header">Send me a message!!</h3>
-      <div class="form-container">
-        <form action="" class="contact-form">
-          <input type="text" name="name" id="name-input" />
-          <span class="name-label">Name</span>
+      <form action="" class="contact-form">
+        <!-- NAME CONTAINER -->
+        <div class="form-container">
+          <input
+            type="text"
+            name="name"
+            id="name-input"
+            autocomplete="off"
+            required
+          />
+          <label for="name" class="name-label">
+            <span class="name-content">Name</span>
+          </label>
+        </div>
+        <!-- EMAIL CONTAINER -->
+        <div class="form-container">
+          <input
+            type="email"
+            name="email"
+            id="email-input"
+            autocomplete="off"
+            required
+          />
+          <label for="email" class="email-label">
+            <span class="email-content">Email</span>
+          </label>
+        </div>
+        <!-- TEXTAREA CONTAINER -->
+        <div class="form-container">
+          <textarea
+            name="textarea"
+            id="textarea-input"
+            autocomplete="off"
+            required
+          ></textarea>
+          <label for="textarea" class="textarea-label">
+            <span class="textarea-content">Message:</span>
+          </label>
+        </div>
 
-          <input type="email" name="email" id="email-input" />
-          <span class="email-label">Email</span>
-
-          <textarea name="" id="textarea-input" cols="30" rows="10"></textarea>
-          <span class="textarea-label">Message:</span>
-
-          <button class="btn">Submit</button>
-        </form>
-      </div>
+        <div class="btn-container">
+          <button class="btn btn-submit">Submit</button>
+        </div>
+      </form>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>
