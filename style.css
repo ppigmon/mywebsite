@@ -10,7 +10,7 @@
   --form-font-color: #000;
 }
 
-[data-theme = 'dark'] {
+[data-theme="dark"] {
   --bg-color: rgb(31, 31, 31);
   --bg2-color: rgb(17, 17, 17);
   --accent-color: #0dd3ff;
@@ -45,7 +45,7 @@ a {
 
 section {
   background-color: var(--bg2-color);
-  height: 100vh;
+  max-height: 100vh;
   max-width: 2000px;
   margin: 0 auto;
   overflow: hidden;
@@ -65,9 +65,14 @@ section {
   box-shadow: 1px 1px 3px #333;
 }
 
-.btn:hover, .btn-submit:hover {
+.btn:hover,
+.btn-submit:hover {
   transform: scale(1.2);
   transition: transform 300ms ease-out;
+}
+
+/* ----------HOME SECTION------*/
+.home {
 }
 
 /* header and nav bar order should be parent to child and left to right */
@@ -141,7 +146,6 @@ header {
   display: flex;
   align-items: center;
   margin-right: 30px;
-  
 }
 
 .theme-switch {
@@ -192,8 +196,6 @@ input:checked + .slider::before {
 .slider.round::before {
   border-radius: 50%;
 }
-
-
 
 /* -----SOCIAL LINKS-----*/
 
@@ -341,7 +343,6 @@ input:checked + .slider::before {
   font-family: inherit;
   font-size: 1.5rem;
   text-decoration: underline;
-  
 }
 
 /* -----WORK SECTION-----*/
@@ -451,7 +452,6 @@ input:checked + .slider::before {
   position: relative;
   overflow: hidden;
   margin-bottom: 50px;
-  
 }
 
 #name-input,
@@ -549,7 +549,6 @@ input:checked + .slider::before {
   margin-top: 25px;
   padding-top: 10px;
   border-radius: 20px;
-
 }
 
 #status.success {
@@ -569,7 +568,7 @@ input:checked + .slider::before {
     pointer-events: all;
   }
   90% {
-    opacity: .01;
+    opacity: 0.01;
     pointer-events: all;
   }
   100% {
