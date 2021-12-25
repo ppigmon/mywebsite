@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Philip Pigmon</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,10 +19,15 @@
   <body>
     <!----------------------- HOMEPAGE SECTION -->
     <section class="home" id="home-section">
+      <div id="nav-button">
+        <i class="fas fa-bars" id="nav-open"></i>
+        <i class="fas fa-times" id="nav-close"></i>
+      </div>
       <header>
         <span class="logo">Philip Pigmon</span>
-        <nav class="nav">
-          <ul>
+        
+        <nav class="nav" id="nav" >
+          <ul >
             <li><a href="#home-section" class="home-button">Home</a></li>
             <li><a href="#about-section" class="about-button">About</a></li>
             <li><a href="#work-section" class="work-button">Work</a></li>
@@ -30,9 +36,8 @@
             </li>
           </ul>
         </nav>
-        <!-- ----------------dark/light mode switch -->
-
-        <div class="social-links">
+        <!-- SOCIAL LINKS -->
+        <div class="social-links" id="social-links">
           <a href="https://github.com/ppigmon" class="github"
             ><i class="fab fa-github"></i
           ></a>
@@ -41,15 +46,18 @@
             class="linkedin"
             ><i class="fab fa-linkedin-in"></i
           ></a>
-        </div>
-
-        <div class="theme-switch-container">
+          </div>
+          
+          <!-- ----------------dark/light mode switch -->
+        <div class="theme-switch-container" id="theme-switch-container">
           <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
             <div class="slider round"></div>
           </label>
         </div>
-        <!-- <img src="imgs\moon.png" id="icon" /> -->
+
+     
+
       </header>
       <div class="main">
         <div class="profile-image-container">
@@ -188,7 +196,7 @@
             required
           />
           <label for="name" class="name-label">
-            <span class="name-content">Name</span>
+            <span class="name-content">Name:</span>
           </label>
         </div>
         <!-- EMAIL CONTAINER -->
@@ -201,7 +209,7 @@
             required
           />
           <label for="email" class="email-label">
-            <span class="email-content">Email</span>
+            <span class="email-content">Email:</span>
           </label>
         </div>
         <!-- TEXTAREA CONTAINER -->
@@ -217,7 +225,7 @@
           </label>
         </div>
         <button type="submit" class="btn-submit">Submit</button>
-
+        
         <div id="status" class=""></div>
       </form>
     </section>

@@ -78,3 +78,29 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+
+// COLLAPSIBLE NAV BAR
+
+const navOpen = document.getElementById("nav-open");
+const nav = document.getElementById("nav");
+const socialLinks = document.getElementById('social-links')
+const themeSwitch = document.getElementById('theme-switch-container')
+const navClose = document.getElementById('nav-close')
+
+navOpen.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    socialLinks.classList.toggle("active");
+    themeSwitch.classList.toggle('active')
+    navClose.classList.toggle('active')
+    navOpen.classList.toggle('active')
+});
+navClose.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    socialLinks.classList.toggle("active");
+    themeSwitch.classList.toggle('active')
+    navClose.classList.toggle('active')
+    navOpen.classList.toggle('active')
+});
+
+
+
