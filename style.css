@@ -430,7 +430,7 @@ input:checked + .slider::before {
 }
 
 .contact-header {
-  margin: 50px auto 250px auto;
+  margin: 50px auto 125px auto;
   font-size: 3rem;
   border-bottom: 3px solid var(--accent-color);
 }
