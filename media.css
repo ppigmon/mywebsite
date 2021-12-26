@@ -147,10 +147,9 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   header {
-    justify-content: space-around;
+    display: block;
     margin-top: 20px;
-    flex-direction: column;
-    
+    position: relative;
   }
 
   .logo {
@@ -163,20 +162,37 @@
     display: none;
   }
 
-  #nav-open {
-    display: block;
-  }
-
   #nav-open.active {
     display: none;
   }
 
   .nav.active,
   .social-links.active,
-  .theme-switch-container.active,
-  #nav-close.active {
+  .theme-switch-container.active {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    position: absolute;
+
+  }
+
+  .social-links.active {
+      top: 300px;
+      right: 25px;
+  }
+
+  .theme-switch-container.active {
+      top: 375px;
+      right: 25px;
+  }
+
+  #nav-close.active,
+  #nav-open {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 50px;
   }
 
   .nav ul {
