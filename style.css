@@ -414,6 +414,7 @@ input:checked + .slider::before {
   flex-direction: column;
   align-content: center;
   align-items: center;
+  height: 120vh;
 }
 
 .contact::before {
