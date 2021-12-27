@@ -162,6 +162,15 @@
     display: none;
   }
 
+  .nav ul li a {
+      font-size: 35px;
+  }
+
+  .social-links a {
+      font-size: 35px;
+      margin: 0 10px;
+  }
+
   #nav-open.active {
     display: none;
   }
@@ -173,17 +182,18 @@
     width: 100%;
     justify-content: flex-end;
     position: absolute;
-
+   
   }
 
   .social-links.active {
-      top: 300px;
-      right: 25px;
+    top: 350px;
+    right: 33px;
+    
   }
 
   .theme-switch-container.active {
-      top: 375px;
-      right: 25px;
+    top: 435px;
+    right: 50px;
   }
 
   #nav-close.active,
