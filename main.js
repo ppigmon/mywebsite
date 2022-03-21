@@ -101,3 +101,63 @@ navClose.addEventListener("click", () => {
   navClose.classList.toggle("active");
   navOpen.classList.toggle("active");
 });
+
+// skills bar chart
+
+// const ctx = document.getElementById("myChart").getContext("2d");
+
+// const labels = ["HTML", "CSS", "JavaScript", "Node.js", "Express.js"];
+
+// const data = {
+//   labels,
+//   datasets: [
+//     {
+//       data: [2, 2, 2, 1, 1, 5],
+//       backgroundColor: "#0dd3ff",
+//     },
+//   ],
+// };
+
+// const config = {
+//   type: "bar",
+//   data: data,
+//   options: {
+//     layout: {
+//       padding: 100,
+//     },
+//     responsive: true,
+//     scales: {
+//       x: {
+//         grid: {
+//           lineWidth: 0,
+//         },
+//       },
+//       y: {
+//         grid: {
+//           lineWidth: 1,
+//         },
+//         ticks: {
+//           callback: function (value, index, ticks) {
+//             if (value == 1) {
+//               return "Novice";
+//             } else if (value == 2) {
+//               return "Beginner";
+//             } else if (value == 3) {
+//               return "Intermediate";
+//             } else if (value == 4) {
+//               return "Expert";
+//             } else if (value == 5) {
+//               return "Profesional";
+//             }
+//           },
+//         },
+//       },
+//     },
+//   },
+// };
+
+// Chart.defaults.font.size = 20;
+// Chart.defaults.font.family = " 'Ubuntu', 'Aeriel' ";
+// Chart.defaults.plugins.legend.display = false;
+
+// const myChart = new Chart(ctx, config);

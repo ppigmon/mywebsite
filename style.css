@@ -349,6 +349,41 @@ input:checked + .slider::before {
   text-decoration: underline;
 }
 
+/* -----SKILSS SECTION-----*/
+
+/* .skills {
+  text-align: center;
+  font-family: inherit;
+}
+
+.skills::before {
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-color),
+    transparent
+  );
+  height: 3px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.skills-header {
+  margin: 50px auto;
+  font-size: 3rem;
+  border-bottom: 3px solid var(--accent-color);
+  width: fit-content;
+}
+
+section .container {
+  background-color: #fff;
+  width: 70%;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 10%; */
+/* } */
+
 /* -----WORK SECTION-----*/
 
 .work {
