@@ -239,7 +239,9 @@ input:checked + .slider::before {
 .profile-image {
   margin-left: 50px;
   width: auto;
-  height: 600px;
+  max-height: 900px;
+  width: auto;
+  box-shadow: -15px -10px 5px var(--accent-color);
 }
 
 .main-content {
